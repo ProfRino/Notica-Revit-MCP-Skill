@@ -16,7 +16,7 @@ Skill files for the Nonica Revit MCP, enabling AI assistants to query and contro
 Access 50+ MCP tools for Revit, Rhino, and more in a few clicks.  
 Use the link below for a **5% discount** on Nonica Pro:
 
-👉 /[Get Nonica Pro — 5% off with code RINO](https://buy.stripe.com/3cscNl1Hb2iY2SQ3cc?prefilled_promo_code=RINO)
+- [Get Nonica Pro — 5% off with code RINO](https://buy.stripe.com/3cscNl1Hb2iY2SQ3cc?prefilled_promo_code=RINO)
 
 Promo code: `RINO`
 
