@@ -24,16 +24,16 @@ Skill files for the Nonica Revit MCP, enabling AI assistants to query and contro
 
 ## Workflows Covered
 
-### A — Model Health Audit
+### A - Model Health Audit
 Check warnings, family bloat, worksets, and model quality indicators without touching any elements.
 
-### B — Data Extraction
+### B - Data Extraction
 Read and write parameters in bulk across any category. Discover parameter IDs, extract values, and push changes back to Revit.
 
-### C — View & Sheet Management
+### C - View & Sheet Management
 List views and sheets, report viewport placement, create new floor plan views, and apply or clear graphic color overrides on any element in any view.
 
-### D — Geometry & Spatial
+### D - Geometry & Spatial
 Get element location points, bounding boxes, boundary lines, and hosting information. Identify face-hosted elements and infer floor levels from Z coordinates.
 
 ---
