@@ -7,12 +7,21 @@ Skill files for the Nonica Revit MCP, enabling AI assistants to query and contro
 ## Requirements
 
 - [Nonica AI Connector for Revit](https://tools.nonica.io/AIConnector) — the MCP server that exposes Revit to AI assistants  
-- [Autodesk App Store listing](https://apps.autodesk.com/RVT/en/Detail/Index?id=9212699819557407848&appLang=en&os=Win64)  
+- [Nonica Autodesk App Store listing](https://apps.autodesk.com/RVT/en/Detail/Index?id=9212699819557407848&appLang=en&os=Win64)  
 - Autodesk Revit 2022 or later  
 - An MCP-compatible AI client (Claude, Cursor, Windsurf, or any local LLM with MCP support)
 
 ---
+## Get Nonica Pro
 
+Access 50+ MCP tools for Revit, Rhino, and more in a few clicks.  
+Use the link below for a **5% discount** on Nonica Pro:
+
+👉 /[Get Nonica Pro — 5% off with code RINO](https://buy.stripe.com/3cscNl1Hb2iY2SQ3cc?prefilled_promo_code=RINO)
+
+Promo code: `RINO`
+
+---
 ## Files
 
 | File | Description |
@@ -21,7 +30,15 @@ Skill files for the Nonica Revit MCP, enabling AI assistants to query and contro
 | `SKILL_LocalLLM.md` | Lean edition optimized for Gemma 4 27B and smaller local LLMs. Decision-tree structure, exact JSON call syntax, and hard rules to prevent the most common mistakes |
 
 ---
+## Tutorials
 
+| Tutorial | Link |
+|----------|------|
+| Claude + Revit MCP | [▶ Watch on YouTube](https://youtu.be/MAQ9hm3Crao?si=0A1uSM6zNCfqaiUb) |
+| ChatGPT + Revit MCP | [▶ Watch on YouTube](https://youtu.be/Il5ohk_HMps?si=4lrsdynQZJzNGHSP) |
+
+
+---
 ## Workflows Covered
 
 ### A - Model Health Audit
@@ -72,13 +89,6 @@ The skills are fully generic — compatible with any Revit model in any language
 See `SKILL.md` for the full list of 26 gotchas.
 
 ---
-
-## Tutorials
-
-| Tutorial | Link |
-|----------|------|
-| Claude + Revit MCP | [▶ Watch on YouTube](https://youtu.be/MAQ9hm3Crao?si=0A1uSM6zNCfqaiUb) |
-| ChatGPT + Revit MCP | [▶ Watch on YouTube](https://youtu.be/Il5ohk_HMps?si=4lrsdynQZJzNGHSP) |
 
 ## License
 
