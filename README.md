@@ -7,7 +7,6 @@ Skill files for the Nonica Revit MCP, enabling AI assistants to query and contro
 ## Requirements
 
 - [Nonica AI Connector for Revit](https://tools.nonica.io/AIConnector) — the MCP server that exposes Revit to AI assistants  
-- [Nonica Autodesk App Store listing](https://apps.autodesk.com/RVT/en/Detail/Index?id=9212699819557407848&appLang=en&os=Win64)  
 - Autodesk Revit 2022 or later  
 - An MCP-compatible AI client (Claude, Cursor, Windsurf, or any local LLM with MCP support)
 
