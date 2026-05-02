@@ -374,6 +374,7 @@ User asks about...
 | `get_all_elementids_for_specific_type_ids` | `list_elementIds[]` | 50 | Empty = unplaced type (not an error) |
 | `get_all_elements_of_specific_families` | `familyNames[]` | 30 names | Exact match required |
 | `get_parameters_from_elementid` | `elementId` | 1 | Always call first to find param IDs |
+| `get_all_additional_properties_from_elementid` | `elementId` | 1 | API-level props: UniqueId, OwnerViewId, FromRoom/ToRoom |
 | `get_parameter_value_for_element_ids` | `list_elementIds[]`, `idParameter` | 500 | Needs param ID from above |
 | `get_element_types_for_elementids` | `list_elementIds[]` | 500 | Returns TypeId + TypeName |
 | `get_material_layers_from_types` | `list_elementIds[]` | 100 | TYPE IDs only — not instances |

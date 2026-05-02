@@ -1,3 +1,13 @@
+---
+name: nonica-revit-mcp
+description: >
+  Use this skill whenever a user asks anything about a Revit model connected via the Nonica MCP.
+  This includes: reading element data, checking model quality, auditing warnings, extracting
+  parameters, creating views or sheets, exporting PDFs, inspecting geometry, changing colors,
+  moving elements, or writing parameter values. Trigger on any mention of Revit, families,
+  walls, doors, rooms, sheets, schedules, levels, views, or BIM data.
+---
+
 # Nonica Revit MCP — SKILL.md
 
 > Comprehensive reference for all Nonica Revit MCP tools.  
@@ -482,7 +492,6 @@ Common response patterns:
 | Grids | `-2000220` |
 | Views | `-2000279` |
 | Viewports | `-2000510` |
-| Rooms | `-2000160` |
 | MEP Spaces | `-2003600` |
 | Plumbing Fixtures | `-2001160` |
 | Lighting Fixtures | `-2001120` |
