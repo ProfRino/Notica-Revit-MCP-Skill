@@ -44,9 +44,10 @@ All XYZ values are in Revit's internal coordinate system (feet). To interpret "u
 **Rule 8 — Isolation has no reset tool.**
 `set_isolated_elements_in_view` cannot be undone via MCP. Warn the user before calling it. They must reset manually in Revit: View tab → Reset Temporary Hide/Isolate.
 
-**Rule 9 — Creation is always three steps.**
+**Rule 9 — Creation requires three steps; the middle one is mandatory.**
 `create_tool_names_explorer` → `create_tool_arguments_explorer` → `create_tools_invoker`.
-Never skip the middle step — argument names must match exactly or the call will fail.
+Step 1 (`create_tool_names_explorer`) can be skipped when the tool name is already known.
+Never skip step 2 (`create_tool_arguments_explorer`) — argument names must match exactly or the call will fail.
 
 **Rule 10 — Delete cascades.**
 `set_delete_elements` also deletes hosted elements and annotations. Always confirm with the user before calling it.
