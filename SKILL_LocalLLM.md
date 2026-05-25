@@ -44,9 +44,10 @@ All XYZ values are in Revit's internal coordinate system (feet). To interpret "u
 **Rule 8 — Isolation has no reset tool.**
 `set_isolated_elements_in_view` cannot be undone via MCP. Warn the user before calling it. They must reset manually in Revit: View tab → Reset Temporary Hide/Isolate.
 
-**Rule 9 — Creation is always three steps.**
+**Rule 9 — Creation requires three steps; the middle one is mandatory.**
 `create_tool_names_explorer` → `create_tool_arguments_explorer` → `create_tools_invoker`.
-Never skip the middle step — argument names must match exactly or the call will fail.
+Step 1 (`create_tool_names_explorer`) can be skipped when the tool name is already known.
+Never skip step 2 (`create_tool_arguments_explorer`) — argument names must match exactly or the call will fail.
 
 **Rule 10 — Delete cascades.**
 `set_delete_elements` also deletes hosted elements and annotations. Always confirm with the user before calling it.
@@ -374,6 +375,7 @@ User asks about...
 | `get_all_elementids_for_specific_type_ids` | `list_elementIds[]` | 50 | Empty = unplaced type (not an error) |
 | `get_all_elements_of_specific_families` | `familyNames[]` | 30 names | Exact match required |
 | `get_parameters_from_elementid` | `elementId` | 1 | Always call first to find param IDs |
+| `get_all_additional_properties_from_elementid` | `elementId` | 1 | API-level props: UniqueId, OwnerViewId, FromRoom/ToRoom |
 | `get_parameter_value_for_element_ids` | `list_elementIds[]`, `idParameter` | 500 | Needs param ID from above |
 | `get_element_types_for_elementids` | `list_elementIds[]` | 500 | Returns TypeId + TypeName |
 | `get_material_layers_from_types` | `list_elementIds[]` | 100 | TYPE IDs only — not instances |

@@ -81,7 +81,7 @@ The skills are fully generic — compatible with any Revit model in any language
 
 - All coordinates are in **feet** in Revit's internal system — not screen-relative
 - `get_all_elements_shown_in_view` **overflows** on complex 3D views — use `get_elements_by_category` instead
-- Element creation always requires **three steps**: `create_tool_names_explorer` → `create_tool_arguments_explorer` → `create_tools_invoker`
+- Element creation: `create_tool_names_explorer` → `create_tool_arguments_explorer` → `create_tools_invoker` — **never skip the middle step** (step 1 can be omitted when the tool name is known)
 - `model_title` in every response — if it changes, the user switched documents; re-orient immediately
 - Graphic overrides can target **any view by ID**, not just the currently active view
 

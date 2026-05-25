@@ -1,3 +1,13 @@
+---
+name: nonica-revit-mcp
+description: >
+  Use this skill whenever a user asks anything about a Revit model connected via the Nonica MCP.
+  This includes: reading element data, checking model quality, auditing warnings, extracting
+  parameters, creating views or sheets, exporting PDFs, inspecting geometry, changing colors,
+  moving elements, or writing parameter values. Trigger on any mention of Revit, families,
+  walls, doors, rooms, sheets, schedules, levels, views, or BIM data.
+---
+
 # Nonica Revit MCP — SKILL.md
 
 > Comprehensive reference for all Nonica Revit MCP tools.  
@@ -390,9 +400,10 @@ Step 3: create_tools_invoker(toolName, {...})  → execute
 
 ### Export sheets to PDF
 ```
-1. get_elements_by_category(-2003100)                        → sheet IDs (OST_Sheets)
-2. get_parameter_value_for_element_ids(sheetIds, -1007401)   → sheet numbers (sort)
-3. create_tools_invoker("create_pdf_export_print", {
+1. get_elements_by_category(-2003100)                              → sheet IDs (OST_Sheets)
+2. get_parameter_value_for_element_ids(sheetIds, -1007401)         → sheet numbers (sort)
+3. create_tool_arguments_explorer(["create_pdf_export_print"])     → confirm arg names
+4. create_tools_invoker("create_pdf_export_print", {
      list_filenames: ["ProjectSheets.pdf"],
      list_viewids: [sheetId1, sheetId2, ...],  // sorted by number
      folderpath: "C:\\Users\\<username>\\Desktop\\",
@@ -476,13 +487,13 @@ Common response patterns:
 | Curtain Wall Mullions | `-2000171` |
 | Furniture | `-2000080` |
 | Casework | `-2001000` |
+| Planting | `-2001360` |
 | Sheets | `-2003100` |
 | Schedules | `-2000573` |
 | Levels | `-2000240` |
 | Grids | `-2000220` |
 | Views | `-2000279` |
 | Viewports | `-2000510` |
-| Rooms | `-2000160` |
 | MEP Spaces | `-2003600` |
 | Plumbing Fixtures | `-2001160` |
 | Lighting Fixtures | `-2001120` |
